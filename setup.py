@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
     name = "ovhapi",
-    version = "1.0",
+    version = "2.0",
     description='Python module to manage Ovh API',
     maintainer='Guilhem Lettron',
     maintainer_email='guilhem.lettron@optiflows.com',
