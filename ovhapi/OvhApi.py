@@ -105,8 +105,7 @@ class Api:
             queryHeaders = {"X-Ovh-Application": self.applicationKey, "X-Ovh-Timestamp": now, "Content-type": "application/json"}
         req = getattr(requests, method.lower())
         # For debug : print "%s %s" % (method.upper(), targetUrl)
-        result = req(targetUrl, headers=queryHeaders, data=body).text
-        return json.loads(result)
+        return req(targetUrl, headers=queryHeaders, data=body)
     
     def get (self, path):
         """
